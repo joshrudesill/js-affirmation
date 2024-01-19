@@ -1,14 +1,14 @@
 /* GLOBAL TYPOGRAPHY */
 body {
   background-color: #dcdcdc;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #313131;
   font-size: 1.25em;
 }
 
-  
 /* FLEXBOX LAYOUT */
-html, body {
+html,
+body {
   min-height: 100vh;
   margin: auto;
 }
@@ -32,53 +32,80 @@ footer {
   text-align: center;
 }
 
-
 /* HEADER/FOOTER */
-header, footer {
+header {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: tomato;
+  transition: 0.5s;
+}
+header:hover {
+  background-color: rgb(239, 55, 22);
+}
+footer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+  transition: 0.5s;
+}
+footer:hover {
+  background-color: rgb(13, 91, 155);
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
+  font-family: monospace;
+  margin: 5px;
 }
-
 
 /* FORM ELEMENTS */
 input {
-  padding: .5em;
+  padding: 0.5em;
   width: 150px;
-  background: #FCFCFC;
+  background: #fcfcfc;
   border: 1px solid;
 }
 button {
-  padding: .5em;
+  padding: 0.5em;
   width: 75px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
 }
-
+button:hover {
+  transform: translateY(-0.25em);
+  background-color: rgb(100, 210, 210);
+}
 
 /* TABLE */
 table {
   width: 100%;
   text-align: left;
 }
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   height: 2.15em;
 }
-th, td {
-  padding: .5em;
+th,
+td {
+  padding: 0.5em;
   min-width: 3.5em;
 }
 thead {
-  background: #7a7a7a;
-  color: #fcfcfc;
+  background: #0cd8c4;
+  color: #000000;
+  text-decoration: underline;
 }
-tbody tr:nth-child(odd){ 
-  background: #fcfcfc;
+tbody tr:nth-child(odd) {
+  background: rgb(139, 183, 220);
 }
-tbody tr:nth-child(even){
-  background: #dcdcdc;
+tbody tr:nth-child(even) {
+  background: #dfa6a6;
 }
